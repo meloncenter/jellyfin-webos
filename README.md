@@ -1,5 +1,19 @@
+# Jellyfin for webOS with screensaver fix.
+This is a basic fork of the Jellyfin webOS app that fixes the screensaver issue I was having on my LG OLED C1 Series. The fix for this involves with a small edit to the `appinfo.json` file, adding the line 
+```json
+"screenSaverProperties": {"preferredType": 2}
+```
+I also made small changes to the description, title, and version number to differentiate from the official app. 
 
-# Jellyfin for webOS
+You can build the app yourself or download the pre-built `org.jellyfin.webos.mod.screensaverfix_0.6.9_all.ipk` and sideload it. 
+
+I hope this is helpful for someone, cause I spent way too long trying to figure out how to fix this simple problem.. and it turns out the solution was incredible simple. 
+
+Below is the README from the official Jellyfin release.
+
+---
+
+## Jellyfin for webOS
 This is a small wrapper around the web interface provided by the server (https://github.com/jellyfin/jellyfin-web) so most of the development happens there.
 
 
